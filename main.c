@@ -17,7 +17,7 @@ void get_input(char *message, double *value_to_store)
             while((c = getchar()) != EOF && c != '\n') {}
         } else
         {
-            printf("You entered: %lf\n", *value_to_store);
+            printf("You entered: %.2lf\n", *value_to_store);
             input_valid = 1;
         }
     }
@@ -44,9 +44,9 @@ int main(void)
     // Total surface area calculated by adding surface area of all walls.
     // This can be done seperately, however I have shortened it using a distributivity law
     paint_needed = (wall_one_length + wall_two_length + wall_three_length + wall_four_length) * room_height;
-    printf("The area of the floor is %lf\n", floor_area);
-    printf("The amount of paint needed to paint the walls is: %lf\n", paint_needed);
-    printf("The volume of the room is: %lf\n", room_volume);
+    printf("The area of the floor is %.2lf\n", floor_area);
+    printf("The amount of paint needed to paint the walls is: %.2lf\n", paint_needed);
+    printf("The volume of the room is: %.2lf\n", room_volume);
     scanf("%c");
 
     return 0;
