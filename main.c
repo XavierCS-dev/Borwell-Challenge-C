@@ -46,7 +46,7 @@ int main(void)
     wall_four_length = floor_width;
 
     // Total surface area calculated by adding surface area of all walls.
-    // This can be done seperately, however I have shortened it using a distributivity law
+    // This can be done separately, however I have shortened it using a distributivity law
     paint_needed = (wall_one_length + wall_two_length + wall_three_length + wall_four_length) * room_height;
     printf("The area of the floor is %.2lfm\n", floor_area);
     printf("The amount of paint needed to paint the walls is: %.2lfm2\n", paint_needed);
